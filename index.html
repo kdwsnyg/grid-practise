@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #EFEFEF;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+        div {
+            border: 2px solid rgb(59, 59, 59);
+        }
+
+        .nav {
+            background-color: #CFE2F3;
+            height: 50px;
+            line-height: 50px;
+            border: none;
+            border-bottom: 2px solid rgb(59, 59, 59);
+        }
+
+        .container {
+            height: 600px;
+            border: none;
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            grid-template-rows: 1fr 1.5fr;
+            column-gap: 30px;
+            row-gap: 20px;
+            padding: 20px 50px;
+        }
+
+        .blogger {
+            background-color: rgb(218,210,233);
+            padding: 100px 0;
+        }
+        .banner {
+            background-color: rgb(209,224,227);
+            padding: 100px 0;
+        }
+        .article-list {
+            background-color: rgb(218,210,233);
+            padding: 152px 0;
+        }
+        .article-wrapper {
+            background-color: rgb(255,242,205);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 30px;
+            row-gap: 20px;
+            padding: 30px;
+        }
+        .article {
+            background-color: rgb(251,229,205);
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">Nav</div>
+    <div class="container">
+        <div class="blogger">Blogger</div>
+        <div class="banner">Banner</div>
+        <div class="article-list">Article List</div>
+        <div class="article-wrapper">
+            <div class="article">Article 1</div>
+            <div class="article">Article 2</div>
+            <div class="article">Article 3</div>
+            <div class="article">Article 4</div>
+        </div>
+    </div>
+</body>
+</html>
